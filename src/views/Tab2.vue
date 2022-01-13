@@ -222,5 +222,5 @@ export default {
       await alert.present()
     },
   },
-};
+}
 </script>
