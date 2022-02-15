@@ -149,12 +149,11 @@ export default {
                 // console.log("product_id : " + data.product_id);
                 // console.log("product_name : " + data.product_name);
                 // console.log("product_price : " + data.product_price);
-                await axios
-                  .post("http://localhost:3000/mongo/products", data)
-                  .then(function (res) {
-                    console.log(res.data.message);
-                  });
-                  this.allProduct();
+                await axios.post("http://localhost:3000/mongo/products", data)
+                  setTimeout(() => {
+                     this.allProduct();
+                  }, 1200);
+                 
               } else {
                 console.log("กรุณากรอกข้อมูลให้ครบถ้วน");
                 this.checkinput();
