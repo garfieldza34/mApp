@@ -69,7 +69,7 @@ export default {
   methods: {
     async loadNews() {
       const res = await axios.get(
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=f2cfd28c601d4fd1a8ee8efcd0ed7fd7"
+        "https://newsapi.org/v2/top-headlines?country=th&apiKey=f2cfd28c601d4fd1a8ee8efcd0ed7fd7"
       );
       this.dataNews = res.data.articles;
       console.log(this.dataNews);
